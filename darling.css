@@ -1,0 +1,717 @@
+.root {
+    background-color: #FEC8CD;
+    display: block;
+    justify-content: center;
+    position: relative;
+    font-family: monospace;
+    user-select: none;
+
+}
+.test-config {
+    display: grid;
+    gap: 0.5rem;
+    grid-auto-flow: column;
+    height: max-content;
+    justify-content: space-around;
+
+}
+.soundOff.active .soundSvg path {
+    fill: white !important;
+}
+
+#focusbutton.active .focusSvg path {
+    fill: white !important;
+}
+.focusMode{
+    display: none  !important;
+}
+
+
+ .rowcss{
+    display: flex;
+
+ }
+ .modebutton{
+    align-content: center;
+    appearance: none;
+    border: none;
+    display: grid;
+    cursor: pointer;
+    gap: 0.25em;
+    grid-auto-flow: column;
+    height: min-content;
+    text-align: center;
+ }
+
+
+.settings-bar {
+    background-color: #F2BABD;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+
+
+.nav-link,
+svg path:not(.exclude-me) {
+    fill: #A30000;
+}
+
+.innersvg {
+    fill: #A30000 !important;
+}
+
+.exclude-me>.path1 {
+    fill: #A30000 !important;
+}
+
+.exclude-me>.path2 {
+    fill: black !important;
+}
+
+.text-container {
+    align-content: flex-start;
+    margin-left: unset;
+    width: fit-content;
+    overflow: hidden;
+    background-color: #FEC8CD;
+    color: #A30000;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: monospace;
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: normal;
+    max-height: 115px;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+}
+
+
+/* .text-container .word {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    display: inline-block;
+} */
+
+.text-container .word span {
+    display: inline-block;
+}
+
+.word:nth-child(3) .hidden {
+    visibility: hidden;
+}
+
+
+.text-container div.word.active span.current,
+.text-container span.current {
+    display: inline-block;
+    position: relative;
+
+}
+
+.text-container div span.extra {
+    color: rgb(255, 0, 0) !important;
+    border-bottom: 1px red;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.text-container div.word span.warning {
+    text-decoration: underline rgb(75, 0, 0);
+}
+
+.text-container div.word.active span.current::before,
+.text-container span.current::before {
+    position: absolute;
+    content: "|";
+    width: 2px;
+    border-radius: 5px;
+    left: -40%;
+    color: white;
+    animation: blink 1s ease-in-out infinite;
+}
+
+.text-result {
+    color: white;
+    font-size: 25px;
+}
+
+.num-result {
+    color: #A30000;
+    font-size: 45px;
+}
+
+.input-field {
+    z-index: -999;
+    opacity: 0;
+    position: relative;
+}
+
+.text-container div.word span.correct {
+    color: white !important;
+}
+
+.text-container div.word span.incorrect {
+    color: yellow !important;
+    border-bottom: 1px red;
+}
+
+.footer-button {
+    text-decoration: none;
+    background-color: #FEC8CD;
+    color: #A30000;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 2px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    /* align-items: center; */
+    /* justify-content: center; */
+    position: relative;
+}
+
+.time {
+    color: white;
+}
+
+.faqbutton {
+    background-color: #F4A3B4 !important;
+
+}
+
+.loginClickhere {
+    color: white !important;
+}
+
+.login-text {
+    color: #A30000 !important;
+}
+
+.text-container p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.5;
+
+
+}
+
+
+
+.navbar navbar-sm {
+    background-color: rgb(38, 42, 51);
+
+}
+
+.container {
+    margin: 10px;
+}
+
+#logo {
+    height: 60px;
+}
+
+.modal-content {
+    background-color: #FEC8CD !important;
+    color: black !important;
+}
+.usertext{
+    background-color:#FEC8CD;
+    color: white;
+}
+
+.spacer {
+    color: white;
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.span-color-white {
+    color: white;
+    padding: 0.25em;
+    font-family: monospace;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.card-header,
+.card-body {
+    background-color: #FEC8CD !important;
+}
+
+.game-button {
+    background-color: transparent !important;
+    color: #A30000 !important;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.accord-button {
+    color: #A30000;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px #A30000;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.accord-button>span {
+    color: #A30000;
+}
+
+.modal-title {
+    color: #A30000 !important;
+    margin-left: 11rem;
+}
+
+.time-button {
+    background-color: transparent !important;
+    color: #A30000 !important;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.time-button.active span,
+.time-button.active svg path {
+    fill: white;
+    color: white;
+}
+
+
+.time-button:hover span,
+.time-button:hover svg path {
+    color: white;
+    fill: #ffffff !important;
+
+}
+
+
+
+.svgs {
+    fill: #A30000;
+}
+
+
+.game-button.active span,
+.game-button.active svg path {
+    fill: white;
+    color: white;
+}
+
+.game-button:hover span,
+.game-button:hover svg path {
+    color: #ffffff;
+    fill: #ffffff !important;
+}
+
+.accord-button:hover span,
+.accord-button:hover svg {
+    color: #ffffff;
+
+    fill: #ffffff !important;
+
+}
+
+.reset-button.active span,
+.reset-button.active svg {
+    fill: white;
+    color: white;
+}
+
+
+.reset-button:hover span,
+.reset-button:hover svg {
+    color: #ffffff;
+    transform: translateY(-2px);
+    fill: #ffffff !important;
+
+}
+
+.footer-button.active span,
+.footer-button.active svg path {
+    fill: white;
+    color: white;
+}
+
+
+.footer-button:hover span,
+.footer-button:hover svg path {
+    color: #ffffff;
+    fill: #ffffff !important;
+
+}
+
+
+a svg :hover,
+li a svg :hover {
+    fill: #ffffff;
+
+}
+
+.reset-button {
+    background-color: transparent;
+    margin-left: 48%;
+    margin-top: 30px;
+    width: 5%;
+}
+
+
+
+.reset-button:active {
+    animation: color-change 0.5s forwards;
+}
+
+@keyframes color-change {
+    from {
+        background-color: white;
+
+    }
+
+    to {
+        background-color: white;
+    }
+}
+
+button svg :hover {
+    fill: #ffffff;
+}
+
+.span-color {
+    color: #A30000;
+    padding: 0.25em;
+}
+
+#bottom {
+    color: rgb(31, 35, 44);
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 0 5px;
+    padding-top: 0px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    position: relative;
+    text-align: center;
+}
+
+#bottom .keyTips {
+    line-height: 1.25rem;
+    margin-bottom: 2rem;
+    transition: .125s;
+    font-family: monospace;
+
+}
+
+.properties {
+    background-color: #A30000;
+    color: #FEC8CD;
+    display: inline-block;
+    border-radius: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.properties-text {
+    color: #A30000;
+    ;
+}
+
+.modal-body>#accordion>.card {
+    border: none;
+}
+
+
+.login-box {
+    font-family: monospace;
+    position: relative;
+    /* width: 400px; */
+    padding: 40px;
+    margin: 20px auto;
+    /* transform: translate(-50%, -55%); */
+    background: transparent;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.theme-button-list {
+    font-family: monospace;
+    list-style-type: none;
+    border: none;
+    border-radius: 5px;
+    margin: 0.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #A30000;
+    transition: all 1000ms;
+    font-size: 15px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid;
+    background-color: #FEC8CD;
+}
+
+
+.listView {
+    list-style-type: none;
+    padding-right: 10% !important;
+}
+
+.theme-button-list:hover::before {
+    width: 250%;
+}
+
+.login-box p:first-child {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: start;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    padding: 10px 0;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    font-family: monospace;
+    border: 1px rgba(31, 35, 44);
+    outline: none;
+    background: #F2BABD;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #A30000;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -30px;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    background: #A30000;
+    border-radius: 10px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 3px
+}
+
+.login-box a:hover {
+    background: #fff;
+    color: #272727;
+    border-radius: 5px;
+}
+
+.login-box a span {
+    position: absolute;
+    display: block;
+
+}
+
+.login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fff);
+    animation: btn-anim1 1.5s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #fff);
+    animation: btn-anim2 1.5s linear infinite;
+    animation-delay: .375s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #fff);
+    animation: btn-anim3 1.5s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #fff);
+    animation: btn-anim4 1.5s linear infinite;
+    animation-delay: 1.125s
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.login-box p:last-child {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.login-box a.a2 {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-box a.a2:hover {
+    background: transparent;
+    color: #aaa;
+    border-radius: 5px;
+}
+.dropdown {
+    display: none;
+    /* margin-left: 30%; */
+}
+
+.dropdown-item.active {
+    background-color: transparent !important;
+    color: rgb(75, 0, 0) !important;
+}
+
+.dropdown-menu {
+    background-color: #F2BABD !important;
+}
+
+.dropdownBtn {
+    background-color: #F2BABD;
+    color: rgb(75, 0, 0);
+    border: none;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .dropdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .test-config {
+        display: none;
+    }
+}
+  
+.text-container::-webkit-scrollbar {
+    width: 10;
+    /* set the width of the scrollbar to 0 */
+}
+
+.text-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    /* hide the scrollbar thumb */
+}

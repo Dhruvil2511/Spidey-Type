@@ -1,0 +1,715 @@
+.root {
+    background-color: #000000;
+    display: block;
+    justify-content: center;
+    position: relative;
+    font-family: monospace;
+    user-select: none;
+}
+
+.test-config {
+    display: grid;
+    gap: 0.5rem;
+    grid-auto-flow: column;
+    height: max-content;
+    justify-content: space-around;
+
+}
+
+
+ .rowcss{
+    display: flex;
+
+ }
+ .modebutton{
+    align-content: center;
+    appearance: none;
+    border: none;
+    display: grid;
+    cursor: pointer;
+    gap: 0.25em;
+    grid-auto-flow: column;
+    height: min-content;
+    text-align: center;
+ }
+
+
+.settings-bar {
+    background-color: #1E001E !important;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.text-container {
+    align-content: flex-start;
+    margin-left: unset;
+    width: fit-content;
+    overflow: hidden;
+    background-color: #000000;
+    color: #972FFF;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: monospace;
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: normal;
+    max-height: 115px;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+}
+
+
+/* .text-container .word {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    display: inline-block;
+} */
+
+.text-container .word span {
+    display: inline-block;
+}
+
+.word:nth-child(3) .hidden {
+    visibility: hidden;
+}
+
+
+
+.text-container div.word.active span.current,
+.text-container span.current {
+    display: inline-block;
+    position: relative;
+
+}
+
+.usertext{
+    background-color: #000000;
+    color: white;
+}
+.usertext{
+    background-color: #000000;
+    color: white;
+}
+
+.text-container div span.extra {
+    color: wheat !important;
+    border-bottom: 1px red;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.text-container div.word span.warning {
+    text-decoration: underline wheat;
+}
+
+.text-container div.word.active span.current::before,
+.text-container span.current::before {
+    position: absolute;
+    content: "|";
+    width: 2px;
+    border-radius: 5px;
+    left: -40%;
+    color: white;
+    animation: blink 1s ease-in-out infinite;
+}
+
+
+.input-field {
+    z-index: -999;
+    opacity: 0;
+    position: relative;
+}
+.soundOff.active .soundSvg path {
+    fill: #EBD7FF !important;
+}
+
+#focusbutton.active .focusSvg path {
+    fill: #EBD7FF !important;
+}
+.focusMode{
+    display: none ;
+}
+
+.text-container div.word span.correct {
+    color: #EBD7FF !important;
+}
+
+.text-container div.word span.incorrect {
+    color: red !important;
+    border-bottom: 1px red;
+}
+
+.footer-button {
+    background-color: #000000;
+    color: #972FFF;
+    text-decoration: none !important;
+    border: none ;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 2px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    /* align-items: center; */
+    /* justify-content: center; */
+    position: relative;
+}
+
+.time {
+    color: #c58aff;
+}
+
+.faqbutton {
+    background-color: #972FFF !important;
+
+}
+
+.loginClickhere {
+    color: white !important;
+}
+
+.text-container p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.5;
+
+
+}
+
+.nav-link,
+svg path :not(.exclude-me) {
+    fill: #972FFF  !important;
+}
+.innersvg{
+    fill: #972FFF  !important;   
+}
+.text-result{
+    color:  #EBD7FF;
+    font-size: 25px;
+}
+.num-result{
+    color: #c58aff;
+    font-size: 45px;
+}
+
+.exclude-me>.path1 {
+    fill: #c58aff!important;
+}
+
+.exclude-me>.path2 {
+    fill: #EBD7FF !important;
+}
+
+.navbar navbar-sm {
+    background-color: #171717;
+
+}
+
+.container {
+    margin: 10px;
+}
+
+#logo {
+    height: 60px;
+}
+.modal-dialog{
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.modal-content {
+    background-color: #000000 !important;
+    color: #c58aff!important;
+}
+.modal-title{
+    color: #c58aff !important;
+    margin-left: 11rem;
+}
+
+
+.spacer {
+    color: #000000;
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.span-color-white {
+    color: #c58aff;
+    padding: 0.25em;
+    font-family: monospace;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.card-header,
+.card-body {
+    background-color: #000000 !important;
+}
+
+.game-button {
+    background-color: transparent !important;
+    color: #972FFF !important;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.accord-button {
+    background-color: #000000;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px #AB88FF;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.time-button {
+    background-color: transparent !important;
+    color: #972FFF;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.time-button.active span,
+.time-button.active svg {
+    fill: #EBD7FF;
+    color: #EBD7FF;
+}
+
+
+.time-button:hover span,
+.time-button:hover svg path {
+    color: white;
+    fill: white !important;
+
+}
+
+
+
+.svgs {
+    fill: white;
+}
+
+
+.game-button.active span,
+.game-button.active svg path {
+    fill: #EBD7FF!important;
+    color: #EBD7FF !important;
+}
+
+.game-button:hover span,
+.game-button:hover svg path {
+    color: white !important;
+    fill: white !important;
+}
+
+.accord-button:hover span,
+.accord-button:hover svg {
+    color: white;
+    fill: white !important;
+
+}
+
+.reset-button.active span,
+.reset-button.active svg {
+    fill: #EBD7FF;
+    color: #EBD7FF;
+}
+
+
+.reset-button:hover span,
+.reset-button:hover svg {
+    color: white;
+    fill: white!important;
+
+}
+
+.footer-button.active span,
+.footer-button.active svg path {
+    fill: #EBD7FF!important;
+    color: #EBD7FF !important;
+}
+
+
+.footer-button:hover span,
+.footer-button:hover svg path {
+    color: white !important;
+    fill: white !important;
+
+}
+
+
+a svg :hover,
+li a svg :hover {
+    fill: white;
+
+}
+
+.reset-button {
+    background-color: transparent;
+    margin-left: 48%;
+    margin-top: 30px;
+    width: 5%;
+}
+
+
+
+.reset-button:active {
+    animation: color-change 0.5s forwards;
+}
+
+@keyframes color-change {
+    from {
+        background-color: rgb(31, 35, 44);
+
+    }
+
+    to {
+        background-color: white;
+        opacity: 0.5;
+    }
+}
+
+button svg :hover {
+    fill: white;
+}
+
+.span-color {
+    color: #972FFF;
+    padding: 0.25em;
+}
+
+#bottom {
+    color: rgb(31, 35, 44);
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 0 5px;
+    padding-top: 0px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    position: relative;
+    text-align: center;
+}
+
+#bottom .keyTips {
+    line-height: 1.25rem;
+    margin-bottom: 2rem;
+    transition: .125s;
+    font-family: monospace;
+}
+
+.properties {
+    background-color: #972FFF;
+    display: inline-block;
+    border-radius: 3px;
+    color: #000000;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.properties-text {
+    color: #972FFF;
+}
+
+.modal-body>#accordion>.card {
+    border: none;
+}
+
+
+.login-box {
+    font-family: monospace;
+    position: relative;
+    /* width: 400px; */
+    padding: 40px;
+    margin: 20px auto;
+    /* transform: translate(-50%, -55%); */
+    background: transparent;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.theme-button-list {
+    font-family: monospace;
+    list-style-type: none;
+    border: none;
+    border-radius: 5px;
+    margin: 0.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color:#c58aff;
+    transition: all 1000ms;
+    font-size: 15px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid;
+    background-color:#000000; 
+}
+
+
+.listView {
+    list-style-type: none;
+    padding-right: 10% !important;
+}
+
+
+.theme-button-list:hover::before {
+    width: 250%;
+}
+
+.login-box p:first-child {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: start;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    padding: 10px 0;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    font-family: monospace;
+    border: 1px rgba(31, 35, 44);
+    outline: none;
+    background:#972FFF;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    padding-left: 10px;
+    font-size: 16px;
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -30px;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+    background: #972FFF;
+    border-radius: 10px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 3px
+}
+
+.login-box a:hover {
+    background: #fff;
+    color: #272727;
+    border-radius: 5px;
+}
+
+.login-box a span {
+    position: absolute;
+    display: block;
+
+}
+
+.login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fff);
+    animation: btn-anim1 1.5s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+.login-text{
+    color: #c58aff !important;
+}
+
+.login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #fff);
+    animation: btn-anim2 1.5s linear infinite;
+    animation-delay: .375s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #fff);
+    animation: btn-anim3 1.5s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #fff);
+    animation: btn-anim4 1.5s linear infinite;
+    animation-delay: 1.125s
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.login-box p:last-child {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.login-box a.a2 {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-box a.a2:hover {
+    background: transparent;
+    color: #aaa;
+    border-radius: 5px;
+}
+.dropdown {
+    display: none;
+    /* margin-left: 30%; */
+}
+
+.dropdown-item.active {
+    background-color: transparent !important;
+    color: #EBD7FF!important;
+}
+
+.dropdown-menu {
+    background-color:#1E001E !important;
+}
+.dropdownBtn {
+    background-color:#1E001E;
+    color: #972FFF;
+    border: none;
+    border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .dropdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .test-config {
+        display: none;
+    }
+}
+  
+.text-container::-webkit-scrollbar {
+    width: 10;
+    /* set the width of the scrollbar to 0 */
+}
+
+.text-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    /* hide the scrollbar thumb */
+}

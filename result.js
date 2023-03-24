@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 function resetGame() {
     localStorage.setItem("prevTheme", fetchTheme);
-    window.location.replace("main.html");
+    window.location.replace("index.html");
 
 }
 

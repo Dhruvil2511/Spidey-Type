@@ -63,10 +63,10 @@ var settingsSvg;
 var customTextOrNot = false;
 document.addEventListener("DOMContentLoaded", function () {
     const themePresent = localStorage.getItem("prevTheme");
-//     if (themePresent != "null") {
-//         let theme = document.getElementById('theme-style');
-//         theme.href = themePresent + '.css';
-//     }
+    if (themePresent != "null") {
+        let theme = document.getElementById('theme-style');
+        theme.href = themePresent + '.css';
+    }
     const keyboardSound = document.querySelector('#keyboard-sound');
     const timeShow = document.getElementById("timer");
     const soundOff = document.querySelector('.soundOff');

@@ -22,7 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (themeStyle != null)
         themeStyle.href = fetchTheme + '.css';
     resultPage();
-    resetBtnTag.addEventListener("click", resetGame);
+    if(resetBtnTag)
+        resetBtnTag.addEventListener("click", resetGame);
 
 });
 function resetGame() {

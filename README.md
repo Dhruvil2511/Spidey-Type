@@ -1,9 +1,9 @@
 # Spidey-Type
 __Minimalistic Website for typing speed test!__ 
 
-**TRY SPIDEY TYPE** :- [https://dhruvil2511.github.io/Spidey-Type/](URL) 
+**TRY SPIDEY TYPE** :- [https://dhruvil2511.github.io/Spidey-Type/](https://dhruvil2511.github.io/Spidey-Type/) 
 
-- Spidey-Type is a minimalistic typing test website inspired from famous [monkeytype.com](URL). It offers an exciting and engaging way to improve your typing speed and accuracy. 
+- Spidey-Type is a minimalistic typing test website inspired from famous [monkeytype.com](www.monkeytype.com). It offers an exciting and engaging way to improve your typing speed and accuracy. 
 
 - Designed with simplicity in mind, it provides a distraction-free environment just like monkeytype.com for users to focus on their typing skills without any unnecessary clutter or distractions.
 
@@ -20,6 +20,6 @@ __Minimalistic Website for typing speed test!__
     - Bootstrap
     
    
- **TRY SPIDEY TYPE NOW** :- [https://dhruvil2511.github.io/Spidey-Type/](URL) 
+ **TRY SPIDEY TYPE NOW** :- [https://dhruvil2511.github.io/Spidey-Type/](https://dhruvil2511.github.io/Spidey-Type/) 
 
 

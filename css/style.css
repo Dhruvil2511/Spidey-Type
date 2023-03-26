@@ -297,12 +297,12 @@
 
 .text-result {
     color: #526777;
-    font-size: 25px;
+    font-size: 24px;
 }
 
 .num-result {
     color: red;
-    font-size: 45px;
+    font-size: 42px;
 }
 
 .time-button:hover span,

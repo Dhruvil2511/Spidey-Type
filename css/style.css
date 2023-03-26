@@ -1,0 +1,699 @@
+/* Content-Type: text/css */
+
+.root {
+    background-color: rgb(38, 42, 51);
+    justify-content: center;
+    position: relative;
+    font-family: monospace;
+    user-select: none;
+    
+}
+
+.test-config {
+    display: grid;
+    gap: 0.5rem;
+    grid-auto-flow: column;
+    height: max-content;
+    justify-content: space-around;
+}
+
+
+
+.rowcss {
+    display: flex;
+
+}
+
+.modebutton {
+    align-content: center;
+    appearance: none;
+    border: none;
+    display: grid;
+    cursor: pointer;
+    gap: 0.25em;
+    grid-auto-flow: column;
+    height: min-content;
+    text-align: center;
+}
+
+
+.text-container {
+    align-content: flex-start;
+    margin-left: unset;
+    position: relative;
+    width: fit-content;
+    overflow: hidden;   
+    background-color: rgb(38, 42, 51);
+    color: rgb(82, 103, 119);
+    font-size: 25px;
+    font-weight: 400;
+    font-family: monospace;
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: normal;
+    max-height: 115px;
+    letter-spacing: 1px;
+    line-height:1.5em;
+}
+
+.text-container .word span {
+    display: inline-block;
+}
+
+.hidden {
+    display: none;
+}
+.text-container div span.extra {
+    color: rgb(255, 0, 0) !important;
+    border-bottom: 1px red;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.text-container div.word span.warning {
+    text-decoration: underline rgb(75, 0, 0);
+}
+.text-container div.word.active span.current,
+.text-container span.current {
+    display: inline-block;
+    position: relative;
+
+}
+.text-container div.word.active span.current::before,
+.text-container span.current::before {
+    position: absolute;
+    content: "|";
+    width: 2px;
+    border-radius: 5px;
+    left: -40%;
+    color: red;
+    animation: blink 1s ease-in-out infinite;
+}
+
+
+.input-field {
+    z-index: -999;
+    opacity: 0;
+    position: relative;
+}
+.focusMode{
+    display: none ;
+}
+.soundOff.active .soundSvg path {
+    fill: white !important;
+}
+
+#focusbutton.active .focusSvg path {
+    fill: white !important;
+}
+
+.navbar-brand{
+    display: block !important;
+}
+
+.text-container div.word span.correct {
+    color: white !important;
+}
+
+.text-container div.word span.incorrect {
+    color: rgb(255, 0, 0) !important;
+    border-bottom: 1px red;
+}
+
+.footer-button {
+    background-color: rgb(38, 42, 51);
+    text-decoration: none;
+    color: rgb(82, 103, 119);
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 2px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    /* align-items: center; */
+    /* justify-content: center; */
+    position: relative;
+}
+
+.time {
+    color: red;
+}
+
+.text-container p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.5;
+
+
+}
+
+.navbar navbar-sm {
+    background-color: rgb(38, 42, 51);
+    
+
+}
+
+.container {
+    margin: 10px;
+}
+
+#logo {
+    height: 60px;
+}
+
+.usertext {
+    background-color: #262A33;
+    color: white;
+}
+
+.modal-content {
+    background-color: rgb(38, 42, 51) !important;
+    color: white !important;
+}
+
+.modal-theme-title {
+    margin-left: 6.5rem;
+
+}
+
+.spacer {
+    color: rgb(38, 42, 51);
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.span-color-white {
+    color: white;
+    padding: 0.25em;
+    font-family: monospace;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.dropdown {
+    display: none;
+    /* margin-left: 30%; */
+}
+
+.dropdown-item.active {
+    background-color: transparent !important;
+    color: red !important;
+}
+
+.dropdown-menu {
+    background-color: #1F232C !important;
+}
+
+.card-header,
+.card-body {
+    background-color: rgb(38, 42, 51) !important;
+}
+
+.game-button {
+    background-color: transparent !important;
+    color: rgb(82, 103, 119) !important;
+    border: none !important;
+    border-radius: 20px;
+    flex-grow: 1 !important;
+    margin-top: 10px;
+    margin-left: 5px;
+    /* margin-right: 10px; */
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgb(31, 35, 44);
+    transition: all 0.2s ease-in-out;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.accord-button {
+    background-color: rgb(31, 35, 44);
+    color: rgb(82, 103, 119);
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgb(31, 35, 44);
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.time-button {
+    background-color: transparent!important;
+    color: rgb(82, 103, 119);
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgb(31, 35, 44);
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.time-button.active span,
+.time-button.active svg {
+    fill: rgb(168, 0, 0);
+    color: rgb(168, 0, 0);
+}
+
+.exclude-me>.path1 {
+    fill: red !important;
+}
+
+.exclude-me>.path2 {
+    fill: #bfc8e0 !important;
+}
+
+.innersvg {
+    fill: rgb(82, 103, 119) !important;
+    vertical-align: middle;
+}
+
+.text-result {
+    color: #526777;
+    font-size: 25px;
+}
+
+.num-result {
+    color: red;
+    font-size: 45px;
+}
+
+.time-button:hover span,
+.time-button:hover svg {
+    color: #ffffff;
+    fill: #ffffff !important;
+
+}
+
+
+
+.svgs {
+    fill: rgb(82, 103, 119);
+}
+
+
+.game-button.active span,
+.game-button.active svg path {
+    fill: rgb(168, 0, 0) !important;
+    color: rgb(168, 0, 0) !important;
+}
+
+.game-button:hover span,
+.game-button:hover svg path {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+}
+
+.accord-button:hover span,
+.accord-button:hover svg {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+
+}
+
+.reset-button.active span,
+.reset-button.active svg {
+    fill: rgb(168, 0, 0);
+    color: rgb(168, 0, 0);
+}
+
+
+.reset-button:hover span,
+.reset-button:hover svg {
+    color: #ffffff;
+    transform: translateY(-2px);
+    fill: #ffffff !important;
+
+}
+
+.footer-button.active span,
+.footer-button.active svg path {
+    fill: rgb(168, 0, 0);
+    color: rgb(168, 0, 0);
+}
+
+svg,
+path :not(.exclude-me) {
+    fill: rgb(82, 103, 119);
+}
+
+
+
+
+.footer-button:hover span,
+.footer-button:hover svg path {
+    color: #ffffff;
+    fill: #ffffff !important;
+
+}
+
+
+a svg :hover,
+li a svg :hover {
+    fill: #ffffff;
+
+}
+
+.reset-button {
+    background-color: transparent;
+    margin-left: 48%;
+    margin-top: 30px;
+    width: 5%;
+}
+
+
+
+.reset-button:active {
+    animation: color-change 0.5s forwards;
+}
+
+@keyframes color-change {
+    from {
+        background-color: rgb(31, 35, 44);
+
+    }
+
+    to {
+        background-color: white;
+    }
+}
+
+button svg :hover {
+    fill: #ffffff;
+}
+
+.span-color {
+    color: rgb(82, 103, 119);
+    padding: 0.25em;
+}
+
+#bottom {
+    color: rgb(31, 35, 44);
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 0 5px;
+    padding-top: 0px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    position: relative;
+    text-align: center;
+}
+
+#bottom .keyTips {
+    line-height: 1.25rem;
+    margin-bottom: 2rem;
+    transition: .125s;
+    font-family: monospace;
+}
+
+.properties {
+    background-color: rgb(82, 103, 119);
+    display: inline-block;
+    border-radius: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.properties-text {
+    color: rgb(82, 103, 119);
+}
+
+.modal-body>#accordion>.card {
+    border: none;
+}
+
+
+.login-box {
+    font-family: monospace;
+    position: relative;
+    /* width: 400px; */
+    padding: 40px;
+    margin: 20px auto;
+    /* transform: translate(-50%, -55%); */
+    background: transparent;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.theme-button-list {
+    font-family: monospace;
+    list-style-type: none;
+    /* padding: 0.5em; */
+    border: none;
+    border-radius: 5px;
+    margin: 0.5em;
+
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffffff;
+    transition: all 1000ms;
+    font-size: 15px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid;
+    background-color: rgb(38, 42, 51);
+}
+
+.dropdownBtn {
+    background-color: #1F232C;
+    color: #526777;
+    border-radius: 5px;
+}
+
+.listView {
+    list-style-type: none;
+    padding-right: 10% !important;
+}
+
+.settings-bar {
+    background-color: rgb(31, 35, 44);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.faqbutton {
+    background-color: red !important;
+}
+
+.theme-button-list:hover::before {
+    width: 250%;
+}
+
+.login-box p:first-child {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: start;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    padding: 10px 0;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    font-family: monospace;
+    border: 1px rgba(31, 35, 44);
+    outline: none;
+    background: rgba(31, 35, 44);
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    padding-left: 10px;
+    font-size: 16px;
+    color: rgb(82, 103, 119);
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -30px;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    background: rgba(31, 35, 44);
+    border-radius: 10px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 3px
+}
+
+.login-box a:hover {
+    background: #fff;
+    color: #272727;
+    border-radius: 5px;
+}
+
+.login-box a span {
+    position: absolute;
+    display: block;
+
+}
+
+.login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fff);
+    animation: btn-anim1 1.5s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #fff);
+    animation: btn-anim2 1.5s linear infinite;
+    animation-delay: .375s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #fff);
+    animation: btn-anim3 1.5s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #fff);
+    animation: btn-anim4 1.5s linear infinite;
+    animation-delay: 1.125s
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.loginClickhere {
+    color: red;
+}
+
+.login-box p:last-child {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.login-box a.a2 {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-box a.a2:hover {
+    background: transparent;
+    color: #aaa;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .dropdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .test-config {
+        display: none;
+    }
+}

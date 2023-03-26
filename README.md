@@ -11,7 +11,7 @@ __Minimalistic Website for typing speed test!__
 
 - Less is more: Being minimalistic in colors all the themes available only uses maximum 4 colors . Which makes user experience enjoyable and user can do focused typing! 
 - We have total in 9 themes which have rich minimalistic colors from monkeytype user can choose his type.It offers mininmilastic color schemes to make it easier for users with visual impairments to use.
-- Additionally, Spidey-Type is fully responsive, meaning it can be accessed from any device, including smartphones and tablets but it is mainly focues for desktop/laptop.
+- Additionally, Spidey-Type is fully responsive, meaning it can be accessed from any device, including smartphones and tablets but it is mainly focused for desktop/laptop.
 - Tech used:
    This was my first project after learning fundamental:
     - HTML

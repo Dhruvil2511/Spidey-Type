@@ -1,7 +1,7 @@
 # Spidey-Type
 __Minimalistic Website for typing speed test!__ 
 
-**TRY SPIDEY TYPE** :- [https://dhruvil2511.github.io/Spidey-Type/](https://dhruvil2511.github.io/Spidey-Type/) 
+**TRY SPIDEY TYPE** :- <a href="https://dhruvil2511.github.io/Spidey-Type/" target="_blank">https://dhruvil2511.github.io/Spidey-Type/</a>
 
 - Spidey-Type is a minimalistic typing test website inspired from famous [monkeytype.com](https://www.monkeytype.com). It offers an exciting and engaging way to improve your typing speed and accuracy. 
 

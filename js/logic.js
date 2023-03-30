@@ -64,7 +64,7 @@ var customTextOrNot = false;
 
 document.addEventListener("DOMContentLoaded", function () {
     const themePresent = localStorage.getItem("prevTheme");
-    if (themePresent != null) {
+   if (themePresent !== null  && themePresent!== "null") {
         let theme = document.getElementById('theme-style');
         theme.href = 'css/' + themePresent + '.css';
     }
